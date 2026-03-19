@@ -32,33 +32,8 @@
 
 ### DA01 — Realizar Login (UC01)
 
-```plantuml
-@startuml DA01_RealizarLogin
-title DA01 — Realizar Login
+<img width="761" height="495" alt="image" src="https://github.com/user-attachments/assets/5f570723-e689-42b7-9d20-7d8bd29290b6" />
 
-start
-:Usuário acessa a tela de login;
-:Informa e-mail e senha;
-:Sistema valida as credenciais;
-
-if (Credenciais válidas?) then (Não)
-  if (Conta bloqueada?) then (Sim)
-    :Exibe mensagem de conta bloqueada;
-    :Orienta recuperação de acesso;
-    stop
-  else (Não)
-    :Exibe mensagem de erro;
-    :Solicita nova tentativa;
-    stop
-  endif
-else (Sim)
-  :Autentica o usuário;
-  :Redireciona para tela inicial conforme perfil (RN06);
-  stop
-endif
-
-@enduml
-```
 
 ---
 
